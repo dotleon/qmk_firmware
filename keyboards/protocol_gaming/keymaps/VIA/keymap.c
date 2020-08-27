@@ -21,15 +21,15 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //0
-  LAYOUT(
+  [0] = LAYOUT(
     KC_ESC ,   KC_F1  ,KC_F2  ,KC_F3  ,KC_F4  ,   KC_F5  ,
     HU_0   ,HU_1   ,HU_2   ,HU_3   ,HU_4   ,HU_5   ,HU_6   ,
       KC_TAB ,HU_Q   ,HU_W   ,HU_E   ,HU_R   ,HU_T   ,HU_Z   ,
        KC_CAPS,HU_A   ,HU_S   ,HU_D   ,HU_F   ,HU_G   ,HU_H   ,
      KC_LSFT,HU_II  ,HU_Y   ,HU_X   ,HU_C   ,HU_V   ,HU_B   ,HU_N   ,
-    KC_LCTL,  KC_LCMD,  KC_LALT,KC_NO  ,   KC_SPC ,   KC_NO
+    KC_LCTL,  KC_LCMD,  KC_LALT,KC_NO  ,   KC_SPC ,   MO(1)
     ),
-  LAYOUT(
+  [1] = LAYOUT(
     KC_ESC ,   KC_F6  ,KC_F7  ,KC_F8  ,KC_F9  ,   KC_F10  ,
     HU_7   ,HU_8   ,HU_9   ,HU_3   ,HU_4   ,HU_5   ,HU_6   ,
       KC_TAB ,HU_Q   ,HU_W   ,HU_E   ,HU_R   ,HU_T   ,HU_Z   ,
@@ -37,16 +37,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      KC_LSFT,HU_II  ,HU_Y   ,HU_X   ,HU_C   ,HU_V   ,HU_B   ,HU_N   ,
     KC_LCTL,  KC_LCMD,  KC_LALT,KC_NO  ,   KC_SPC ,   KC_NO
     ),
-  LAYOUT(
+  [2] = LAYOUT(
     _______,   _______,_______,_______,_______,   _______,
     _______,_______,_______,_______,_______,_______,_______,
       _______,_______,_______,_______,_______,_______,_______,
-       _______,_______,_______,_______,_______,_______,_______,
+       _______,_______,KC_LALT,_______,_______,_______,_______,
      _______,_______,_______,_______,_______,_______,_______,_______,
     _______,  _______,  _______,_______,   _______,   _______
     ),
-  LAYOUT(
-    _______,   _______,_______,_______,_______,   _______,
+  [3] = LAYOUT(
+    _______,   _______,KC_LALT,_______,_______,   _______,
     _______,_______,_______,_______,_______,_______,_______,
       _______,_______,_______,_______,_______,_______,_______,
        _______,_______,_______,_______,_______,_______,_______,
